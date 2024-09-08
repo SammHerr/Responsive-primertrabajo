@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: wheat;
+}
+
+input [type = text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    
+    /*margin: 10px 0px;*/
+    /*borde del contenedor*/
+    border: none /*2px solid purple*/;
+    /*redodndeo para el borde del contenedor*/
+    border-radius: 4px;
+    /*color del contenedor*/
+    background-color: white;
+    color: black;
+    /*imagen en el contenedor*/
+    /*background-image: url('searchicon.png');
+    background-repeat: no-repeat;*/
+    resize: vertical;
+
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: block;
+    color: black;
+}
+
+/*para cuando el cursos esta en el input*/
+input:focus{
+    border: 2px solid rgb(103, 98, 99);
+    border-radius: 6px;
+    background-color: rgb(186, 207, 207);
+    color: black;
+}
+
+button{
+    background-color: aquamarine;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+::placeholder{
+    color: black;
+}
+
+select{
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+.container{
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    padding: 18px;
+    width: 500px;
+    margin: auto;
+}
+
+.titulo{
+    margin: auto;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    resize: vertical;
+    border: none;
+    width: 500px
+}
+
+
+@media screen and (max-width: 768px) {
+    .container, .titulo {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    input[type=text], select, textarea {
+        padding: 8px;
+    }
+
+    label {
+        padding: 8px 0;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textos{
+    flex: 1;
+    min-width: 250px;
+}
+
+.textos:first-child{
+    flex: 2;
+    padding: 25px;
+    background-color: white;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.textos div{
+    padding: 25px;
+    background-color: white;
+    margin: 20px;
+}
